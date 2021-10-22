@@ -1,8 +1,8 @@
-const express = require('express'), mongo = require("./mongoose")
+require("dotenv").config();
 const path = require('path');
 const response = require('./app/Http/response')
 const accountRouter = require('./app/modules/Account/routes/index');
-require("dotenv").config();
+const express = require('express'), mongo = require("./mongoose")
 
 var app = express();
 
